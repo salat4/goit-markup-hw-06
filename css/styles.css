@@ -155,7 +155,7 @@ textarea {
 .link-mail:focus {
   color: var(--accent-color);
 }
-.tel-icon {
+.telicon {
   margin-right: 10px;
 }
 .mail-icon {
@@ -184,7 +184,7 @@ textarea {
   fill: currentColor;
 }
 
-.tel-icon {
+.telicon {
   fill: currentColor;
 }
 .section {
@@ -289,6 +289,9 @@ textarea {
 .close-icon {
   fill: #000000;
 }
+.close-icon:hover {
+  fill: #2196f3;
+}
 .modal-text {
   font-family: Roboto;
   font-style: normal;
@@ -320,7 +323,7 @@ textarea {
   margin-top: 12px;
   position: relative;
 }
-.name {
+.field {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
@@ -331,14 +334,184 @@ textarea {
   border-radius: 4px;
   width: 448px;
   height: 40px;
+  padding-left: 38px;
+  padding-right: 39px;
   margin-left: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
-.envelope-icon {
-  background-color: #000000;
+
+.name-input:focus-within {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.personal-icon {
   fill: #000000;
   position: absolute;
-  left: 53px;
-  bottom: 462px;
+  top: 102px;
+  left: 55px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name-input:focus-within + .personal-icon {
+  fill: var(--accent-color);
+}
+.personal-icon:focus-within {
+  fill: #2196f3;
+}
+.tel-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  margin-left: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  padding-left: 38px;
+  padding-right: 39px;
+}
+.tel-input:focus-within {
+  border-color: #2196f3;
+}
+.tel-input:focus-within + .tel-icon {
+  fill: var(--accent-color);
+}
+.envelope-input:focus-within + .envelope-icon {
+  fill: var(--accent-color);
+}
+.comment-input:focus-within {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.agree-input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  text-transform: none;
+}
+.agreement-input {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+.accept {
+  position: relative;
+  min-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 23px;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.accept > .icon-inpute {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid var(--basic-hcolor);
+  border-radius: 2px;
+}
+.button-input {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  border: none;
+}
+.button-input:hover,
+.button-input:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  justify-content: center;
+}
+.tel-icon {
+  fill: #000000;
+  position: absolute;
+  top: 167px;
+  left: 55px;
+}
+.envelope-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  margin-left: 41px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  padding-left: 38px;
+  padding-right: 39px;
+}
+.envelope-input:focus-within {
+  border-color: #2196f3;
+}
+.envelope-icon {
+  fill: #000000;
+  position: absolute;
+  left: 55px;
+  top: 234px;
+}
+.comment-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  resize: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  padding-left: 17px;
+  padding-top: 12px;
+}
+.comment-input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .second-list {
   display: flex;
@@ -725,6 +898,7 @@ textarea {
   width: 358px;
   height: 50px;
   margin-left: 16px;
+  color: var(--white-color);
 }
 .email-text::placeholder {
   font-family: Roboto;
@@ -882,4 +1056,16 @@ textarea {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
