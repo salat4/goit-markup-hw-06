@@ -424,12 +424,9 @@ textarea {
   height: 15px;
   background-image: url(../images/boxer.svg);
   background-repeat: no-repeat;
-  margin-left: -20px;
+  margin-left: -21px;
 }
-.box-inpute {
-  position: absolute;
-  margin-left: -8.5px;
-}
+
 .check {
   display: flex;
   padding-left: 77px;
