@@ -418,8 +418,8 @@ textarea {
   position: absolute;
   width: 16px;
   height: 15px;
-  background-image: url(../images/about/box.jpg);
-  fill: #000000;
+  background-image: url(../images/boxer.svg);
+  fill: var(--primary-text-color);
   background-repeat: no-repeat;
   /* background-color: tomato; */
   margin-left: -20px;
@@ -434,8 +434,12 @@ textarea {
   padding-left: 77px;
   align-items: center;
 }
+.icon_box {
+  width: 16px;
+  height: 15px;
+}
 .check_input:checked + .check_box {
-  background-image: url(../images/about/check.jpg);
+  background-image: url(../images/check.svg);
 }
 .accept {
   position: relative;
