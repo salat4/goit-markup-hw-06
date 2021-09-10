@@ -154,6 +154,8 @@ textarea {
 .link-mail:hover,
 .link-mail:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .telicon {
   margin-right: 10px;
@@ -290,6 +292,8 @@ textarea {
   fill: #000000;
 }
 .close-icon:hover {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
 }
 .modal-text {
@@ -419,11 +423,8 @@ textarea {
   width: 16px;
   height: 15px;
   background-image: url(../images/boxer.svg);
-  fill: var(--primary-text-color);
   background-repeat: no-repeat;
-  /* background-color: tomato; */
   margin-left: -20px;
-  background-color: transparent;
 }
 .box-inpute {
   position: absolute;
@@ -474,6 +475,8 @@ textarea {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-text {
   font-family: Roboto;
