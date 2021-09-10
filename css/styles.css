@@ -418,11 +418,12 @@ textarea {
   position: absolute;
   width: 16px;
   height: 15px;
-  background-image: url(../images/symbol-defs.svg#icon-tel);
+  background-image: url(../images/about/box.jpg);
   fill: #000000;
   background-repeat: no-repeat;
   /* background-color: tomato; */
   margin-left: -20px;
+  background-color: transparent;
 }
 .box-inpute {
   position: absolute;
@@ -432,6 +433,9 @@ textarea {
   display: flex;
   padding-left: 77px;
   align-items: center;
+}
+.check_input:checked + .check_box {
+  background-image: url(../images/about/check.jpg);
 }
 .accept {
   position: relative;
