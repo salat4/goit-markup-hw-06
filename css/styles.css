@@ -408,6 +408,31 @@ textarea {
   text-decoration: underline;
   color: var(--accent-color);
 }
+.check_input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check_box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/symbol-defs.svg#icon-tel);
+  fill: #000000;
+  background-repeat: no-repeat;
+  /* background-color: tomato; */
+  margin-left: -20px;
+}
+.box-inpute {
+  position: absolute;
+  margin-left: -8.5px;
+}
+.check {
+  display: flex;
+  padding-left: 77px;
+  align-items: center;
+}
 .accept {
   position: relative;
   min-width: 100%;
