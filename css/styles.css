@@ -287,6 +287,7 @@ textarea {
   margin-top: 8px;
   margin-left: 490px;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 .close-icon {
   fill: #000000;
@@ -326,6 +327,7 @@ textarea {
   height: 14px;
   margin-top: 12px;
   position: relative;
+  margin-bottom: 4px;
 }
 .field {
   display: flex;
@@ -357,7 +359,7 @@ textarea {
 .personal-icon {
   fill: #000000;
   position: absolute;
-  top: 102px;
+  top: 107px;
   left: 55px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -491,7 +493,7 @@ textarea {
 .tel-icon {
   fill: #000000;
   position: absolute;
-  top: 167px;
+  top: 176px;
   left: 55px;
 }
 .envelope-input {
@@ -518,7 +520,7 @@ textarea {
   fill: #000000;
   position: absolute;
   left: 55px;
-  top: 234px;
+  top: 246px;
 }
 .comment-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -813,7 +815,7 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.42;
-  width: 250px;
+  width: 231px;
 }
 .color-footer {
   color: var(--white-color);
@@ -837,6 +839,7 @@ textarea {
   margin-bottom: 20px;
 }
 .footer-address:nth-child(2) {
+  width: 231px;
   margin-bottom: 9px;
 }
 .footer-address:nth-child(3) {
@@ -900,6 +903,7 @@ textarea {
 }
 .right-footer {
   margin-left: 93px;
+  /* wi550 */
 }
 .right-name {
   font-family: Roboto;
@@ -925,10 +929,11 @@ textarea {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--background-color);
+  width: 358px;
 }
 .email-text {
   background-color: var(--background-color);
-  width: 358px;
+  width: 330px;
   height: 50px;
   margin-left: 16px;
   color: var(--white-color);
