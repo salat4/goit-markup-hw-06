@@ -48,6 +48,9 @@ textarea {
   outline: none;
   border: none;
 }
+button {
+  cursor: pointer;
+}
 .Web-header {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
